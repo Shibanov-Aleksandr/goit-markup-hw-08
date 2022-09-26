@@ -1,0 +1,151 @@
+.form-window {
+  display: flex;
+  flex-direction: column;
+}
+.form-window__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color-text);
+}
+.form-window__label {
+  margin-bottom: 10px;
+}
+.form-window__subtitle {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.form-window__wrapper {
+  position: relative;
+  display: block;
+}
+.form-window__input {
+  padding-left: 42px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color var(--transition-dur-and-func);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+}
+
+.form-window__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill var(--transition-dur-and-func);
+  .form-window__input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+
+.form-window__comment {
+  display: block;
+  padding: 16px 12px 16px 12px;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  transition: border-color var(--transition-dur-and-func);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form-window__label-coment {
+  margin-bottom: 25px;
+}
+.form-window__lable-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.form-window__icon-checked {
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+.form-window__icon-checked-on {
+  display: none;
+  .form-window__input-checkbox:focus + & {
+    border-color: var(--accent-color-bg);
+  }
+}
+
+.form-window__input-checkbox:checked
+  + .form-window__icon-checked
+  .form-window__icon-checked-on {
+  display: block;
+}
+
+.form-window__input-checkbox {
+  position: absolute;
+  appearance: none;
+}
+.form-window__link {
+  text-decoration: revert;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  transition: text-decoration var(--transition-dur-and-func);
+  &:hover,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+.form-window__button {
+  display: flex;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 52px;
+  padding-right: 52px;
+  width: 200px;
+  color: var(--main-color-darck-fon);
+  background-color: var(--accent-color-bg);
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 4px;
+  transition: background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func),
+    border-radius var(--transition-dur-and-func);
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15) 4px;
+  }
+}

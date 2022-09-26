@@ -1,0 +1,21 @@
+:root {
+  --main-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
+  --main-fs: 14px;
+  --main-ls: 0.03em;
+  --accent-color: #2196f3;
+  --mail-color-text: #757575;
+  --secondary-color-text: #212121;
+  --main-bg-color: #ffffff;
+  --main-color-darck-fon: #ffffff;
+  --accent-color-bg: #2196f3;
+  --card-set-gap: 30px;
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+body {
+  background-color: var(--main-bg-color);
+  color: var(--mail-color-text);
+  font-size: var(--main-fs);
+  font-family: var(--main-font-family);
+  letter-spacing: var(--main-ls);
+}

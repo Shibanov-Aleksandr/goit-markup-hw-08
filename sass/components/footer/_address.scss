@@ -1,0 +1,31 @@
+.box-addres__link {
+  display: inline-block;
+  gap: 9px;
+  margin-bottom: 20px;
+  color: var(--main-color-darck-fon);
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.2;
+}
+.address-webstudio {
+  color: var(--main-color-darck-fon);
+  font-style: normal;
+}
+.address-webstudio__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address-webstudio__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.address-webstudio__link-contacts {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--transition-dur-and-func);
+}

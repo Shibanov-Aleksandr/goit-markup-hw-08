@@ -1,0 +1,30 @@
+@import "./utils/variables";
+@import "./base/base";
+@import "./base/container";
+
+@import "./components/header/header";
+@import "./components/header/logo";
+@import "./components/header/navigation";
+@import "./components/header/contacts";
+@import "./components/header/mobile-menu";
+@import "./components/hero/hero";
+@import "./components/hero/hero-btn";
+
+@import "./components/privileges/privileges";
+
+@import "./components/products/products";
+
+@import "./components/team/team";
+
+@import "./components/clients/clienta";
+
+@import "./components/footer/footer";
+@import "./components/footer/address";
+@import "./components/footer/footer-social";
+@import "./components/footer/subscription";
+@import "./components/header/mobile-menu";
+@import "./components/portfolio/filter";
+@import "./components/portfolio/portfolio-galerry";
+
+@import "./components/modal-window/modal-window";
+@import "./components/modal-window/form";
