@@ -1,17 +1,17 @@
 .example-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: calc(-1 * var(--card-set-gap));
-  margin-bottom: calc(-1 * var(--card-set-gap));
-  gap: 30px;
+  display: block;
+  // flex-wrap: wrap;
+  // margin-right: calc(-1 * var(--card-set-gap));
+  // margin-bottom: calc(-1 * var(--card-set-gap));
+  // gap: 30px;
 }
 .portfolio-box {
   position: relative;
 }
 
 .example-list__link {
-  flex-basis: calc((100% - 60px) / 3);
-  margin-bottom: var(--card-set-gap);
+  // flex-basis: calc((100% - 60px) / 3);
+  // margin-bottom: var(--card-set-gap);
 
   display: block;
   transition: box-shadow var(--transition-dur-and-func);
@@ -20,6 +20,9 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+}
+.example-list__item:not(:last-child) {
+  margin-bottom: var(--card-set-gap);
 }
 
 .card-description__title {

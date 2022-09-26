@@ -1,6 +1,12 @@
 .products__list {
   display: flex;
 }
+@media screen and (max-width: 1199px) {
+  .products {
+    display: none;
+  }
+}
+
 .products__item {
   flex-basis: calc((100% - 60px) / 3);
   &:not(:last-child) {

@@ -86,25 +86,31 @@
           </button>
           <ul class="mobile-menu-navigation__list list">
             <li class="mobile-menu-navigation__item">
-              <a class="mobile-menu-navigation__link">Студія</a>
+              <a class="mobile-menu-navigation__link" href="index.html"
+                >Студія</a
+              >
             </li>
             <li class="mobile-menu-navigation__item">
-              <a class="mobile-menu-navigation__link">Портфоліо</a>
+              <a class="mobile-menu-navigation__link" href="portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li class="mobile-menu-navigation__item">
-              <a class="mobile-menu-navigation__link">Контакти</a>
+              <a class="mobile-menu-navigation__link" href="#">Контакти</a>
             </li>
           </ul>
 
           <ul class="mobile-menu-contact__list list">
             <li class="mobile-menu-contact__item">
-              <a class="mobile-menu-contact__link" href="tell:+380961111111"
+              <a
+                class="mobile-menu-contact__link mobile-menu-contact__link-tel"
+                href="tell:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>
             <li class="mobile-menu-contact__item">
               <a
-                class="mobile-menu-contact__link"
+                class="mobile-menu-contact__link mobile-menu-contact__link-mail"
                 href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
@@ -133,21 +139,16 @@
 
     <main>
       <!--===================HERO===================-->
-      <!-- <section class="hero">
-        <div class="container">
-          <h1 class="hero__title">
-            Ефективні рішення<br />
-            для вашого бізнесу
-          </h1>
-          <button type="button" class="hero__button" data-modal-open>
-            Замовити послугу
-          </button>
-        </div>
-      </section> -->
+      <section class="hero">
+        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="hero__button" data-modal-open>
+          Замовити послугу
+        </button>
+      </section>
       <!--===================/HERO===================-->
 
       <!--===================PRIVILEGES===================-->
-      <!-- <section class="privileges section">
+      <section class="privileges section">
         <h2 class="privileges__text visually-hidden">Чим ми кращі</h2>
         <div class="container">
           <ul class="privileges__list list">
@@ -201,11 +202,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--===================/PRIVILEGES===================-->
 
       <!--===================WE-DO===================-->
-      <!-- <section class="products section">
+      <section class="products section">
         <div class="container">
           <h2 class="products-title title">Чим ми займаємося</h2>
           <ul class="products__list list">
@@ -244,21 +245,16 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--===================/WE-DO===================-->
 
       <!--===================TEAM===================-->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                src="./images/team/igor(1).jpg"
-                alt="Ігор"
-                width="270"
-                height="260"
-              />
+              <img src="./images/mob/team/igor.jpg" alt="Ігор" />
               <div class="team-box">
                 <h3 class="team-box__title">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-box__subtitle">Product Designer</p>
@@ -300,12 +296,7 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/team/olga(1).jpg"
-                alt="Ольга"
-                width="270"
-                height="260"
-              />
+              <img src="./images/mob/team/olga.jpg" alt="Ольга" />
               <div class="team-box">
                 <h3 class="team-box__title">Ольга Рєпіна</h3>
                 <p lang="en" class="team-box__subtitle">Frontend Developer</p>
@@ -366,12 +357,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/mykola(1).jpg"
-                alt="Микола"
-                width="270"
-                height="260"
-              />
+              <img src="./images/mob/team/mykola.jpg" alt="Микола" />
               <div class="team-box">
                 <h3 class="team-box__title">Микола Тарасов</h3>
                 <p lang="en" class="team-box__subtitle">Marketing</p>
@@ -432,12 +418,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/myhaylo(1).jpg"
-                alt="Михайло"
-                width="270"
-                height="260"
-              />
+              <img src="./images/mob/team/myhaylo.jpg" alt="Михайло" />
               <div class="team-box">
                 <h3 class="team-box__title">Михайло Єрмаков</h3>
                 <p lang="en" class="team-box__subtitle">UI Designer</p>
@@ -499,11 +480,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--===================/TEAM===================-->
 
       <!--===================CLIENTS===================-->
-      <!-- <section class="clients section">
+      <section class="clients section">
         <div class="container">
           <h2 class="clients__title title">Постійні клієнти</h2>
           <ul class="clients__list list">
@@ -557,17 +538,17 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--===================CLIENTS===================-->
     </main>
     <!--===================/MAIN===================-->
 
     <!--===================FOOTER===================-->
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
       <div class="container footer-box">
         <div class="box-addres">
           <a href="index.html" class="box-addres__link"
-            ><span class="logo__text">Web</span>Studio</a
+            ><span class="logo__text logo-footer">Web</span>Studio</a
           >
           <address class="address-webstudio">
             <ul class="address-webstudio__list list">
@@ -646,7 +627,7 @@
           <button class="subscription__btn" type="submit">Підписатися</button>
         </form>
       </div>
-    </footer> -->
+    </footer>
     <!--===================/FOOTER===================-->
 
     <!--===================MODAL-WINDOW===================-->

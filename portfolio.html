@@ -27,21 +27,25 @@
     <!--===================HEADER===================-->
     <header class="page__header">
       <div class="container box__header">
-        <a href="index.html" class="logo"
+        <a href="index.html" class="logo logo-page-header__tablet"
           ><span class="logo__text">Web</span>Studio</a
-        >
+        ><button type="button" class="mobile-menu__button-open" data-menu-open>
+          <svg class="mobile-menu__icon-open" width="40" height="40">
+            <use href="./images/sprite/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
 
         <nav class="navigatio">
           <ul class="navigation__list list">
             <li class="navigation__item">
-              <a href="index.html" class="navigation__link">Студія</a>
+              <a
+                href="index.html"
+                class="navigation__link navigation__link--active"
+                >Студія</a
+              >
             </li>
             <li class="navigation__item">
-              <a
-                href="portfolio.html"
-                class="navigation__link navigation__link--active"
-                >Портфоліо</a
-              >
+              <a href="portfolio.html" class="navigation__link">Портфоліо</a>
             </li>
             <li class="navigation__item">
               <a href="#" class="navigation__link">Контакти</a>
@@ -69,6 +73,65 @@
             </div>
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__button-close">
+            <svg width="40" height="40">
+              <use
+                href="./images/sprite/symbol-defs.svg#close"
+                data-menu-close
+              ></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-navigation__list list">
+            <li class="mobile-menu-navigation__item">
+              <a class="mobile-menu-navigation__link" href="index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-menu-navigation__item">
+              <a class="mobile-menu-navigation__link" href="portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-menu-navigation__item">
+              <a class="mobile-menu-navigation__link" href="#">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-contact__list list">
+            <li class="mobile-menu-contact__item">
+              <a
+                class="mobile-menu-contact__link mobile-menu-contact__link-tel"
+                href="tell:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu-contact__item">
+              <a
+                class="mobile-menu-contact__link mobile-menu-contact__link-mail"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-social list">
+            <li class="mobile-menu-social__item">
+              <a class="mobile-menu-social__link">Instagram</a>
+            </li>
+            <li class="mobile-menu-social__item">
+              <a class="mobile-menu-social__link">Twitter</a>
+            </li>
+            <li class="mobile-menu-social__item">
+              <a class="mobile-menu-social__link">Facebook</a>
+            </li>
+            <li class="mobile-menu-social__item">
+              <a class="mobile-menu-social__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--===================/HEADER===================-->
@@ -113,10 +176,8 @@
                 <div class="portfolio-box">
                   <div class="ovearly-box">
                     <img
-                      src="./images/portfolio/technocrat.jpg"
+                      src="./images/mob/portfolio/technocrat.jpg"
                       alt="ноутбук з фото"
-                      width="370"
-                      height="294"
                     />
                     <p class="ovearlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -138,10 +199,8 @@
                 <div class="portfolio-box">
                   <div class="ovearly-box">
                     <img
-                      src="./images/portfolio/basketballplayer.jpg"
+                      src="./images/mob/portfolio/basketballplayer.jpg"
                       alt="басетболісти"
-                      width="370"
-                      height="294"
                     />
                     <p class="ovearlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -166,10 +225,8 @@
                 <div class="portfolio-box">
                   <div class="ovearly-box">
                     <img
-                      src="./images/portfolio/seafood.jpg"
+                      src="./images/mob/portfolio/seafood.jpg"
                       alt="картина риби"
-                      width="370"
-                      height="294"
                     />
                     <p class="ovearlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -194,10 +251,8 @@
                 <div class="portfolio-box">
                   <div class="ovearly-box">
                     <img
-                      src="./images/portfolio/headphone.jpg"
+                      src="./images/mob/portfolio/headphone.jpg"
                       alt="навушники"
-                      width="370"
-                      height="294"
                     />
                     <p class="ovearlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -222,10 +277,8 @@
                 <div class="portfolio-box">
                   <div class="ovearly-box">
                     <img
-                      src="./images/portfolio/boxes.jpg"
+                      src="./images/mob/portfolio/boxes.jpg"
                       alt="коробочки"
-                      width="370"
-                      height="294"
                     />
                     <p class="ovearlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -250,10 +303,8 @@
                 <div class="portfolio-box">
                   <div class="ovearly-box">
                     <img
-                      src="./images/portfolio/boarders.jpg"
+                      src="./images/mob/portfolio/boarders.jpg"
                       alt="моноблок"
-                      width="370"
-                      height="294"
                     />
                     <p class="ovearlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -276,12 +327,7 @@
               <a href="" class="example-list__link">
                 <div class="portfolio-box">
                   <div class="ovearly-box">
-                    <img
-                      src="./images/portfolio/book.jpg"
-                      alt="книга"
-                      width="370"
-                      height="294"
-                    />
+                    <img src="./images/mob/portfolio/book.jpg" alt="книга" />
                     <p class="ovearlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -304,12 +350,7 @@
               <a href="" class="example-list__link">
                 <div class="portfolio-box">
                   <div class="ovearly-box">
-                    <img
-                      src="./images/portfolio/tag.jpg"
-                      alt="бірка"
-                      width="370"
-                      height="294"
-                    />
+                    <img src="./images/mob/portfolio/tag.jpg" alt="бірка" />
                     <p class="ovearlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -333,10 +374,8 @@
                 <div class="portfolio-box">
                   <div class="ovearly-box">
                     <img
-                      src="./images/portfolio/laptop.jpg"
+                      src="./images/mob/portfolio/laptop.jpg"
                       alt="ноутбук"
-                      width="370"
-                      height="294"
                     />
                     <p class="ovearlay">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -365,7 +404,7 @@
       <div class="container footer-box">
         <div class="box-addres">
           <a href="index.html" class="box-addres__link"
-            ><span class="logo__text">Web</span>Studio</a
+            ><span class="logo__text logo-footer">Web</span>Studio</a
           >
           <address class="address-webstudio">
             <ul class="address-webstudio__list list">
@@ -446,5 +485,7 @@
       </div>
     </footer>
     <!--===================/FOOTER===================-->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
