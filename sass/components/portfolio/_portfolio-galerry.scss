@@ -1,9 +1,14 @@
 .example-list {
   display: block;
-  // flex-wrap: wrap;
-  // margin-right: calc(-1 * var(--card-set-gap));
-  // margin-bottom: calc(-1 * var(--card-set-gap));
-  // gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .example-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * var(--card-set-gap));
+    margin-bottom: calc(-1 * var(--card-set-gap));
+    gap: 30px;
+  }
 }
 .portfolio-box {
   position: relative;

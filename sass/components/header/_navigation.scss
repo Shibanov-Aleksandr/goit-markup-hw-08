@@ -2,7 +2,11 @@
   display: none;
   transform: color var(--transition-dur-and-func);
 }
-
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+  }
+}
 .navigation__item {
   position: relative;
   margin-right: 50px;

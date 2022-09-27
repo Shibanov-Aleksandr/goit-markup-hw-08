@@ -1,6 +1,6 @@
 .logo {
   display: block;
-  margin-right: 93px;
+  // margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 24px;
   color: #000000;
@@ -8,6 +8,11 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
 }
 .logo__text {
   color: var(--accent-color);

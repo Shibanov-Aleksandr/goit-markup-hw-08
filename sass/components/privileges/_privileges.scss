@@ -18,6 +18,16 @@
 .privileges__item {
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .privileges__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .privileges__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
 
 .privileges__subtitle {
   line-height: 1.7;

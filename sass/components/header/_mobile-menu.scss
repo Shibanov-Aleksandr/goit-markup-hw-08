@@ -36,6 +36,11 @@
   margin-left: auto;
   padding: 0;
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu__button-open {
+    display: none;
+  }
+}
 .mobile-menu__button-close {
   position: absolute;
   top: 10px;

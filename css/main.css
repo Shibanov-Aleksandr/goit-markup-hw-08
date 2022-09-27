@@ -78,7 +78,8 @@ img {
 }
 
 .cards,
-.team-title .products__item {
+.team-title,
+.products__item {
   position: relative;
 }
 
@@ -121,7 +122,6 @@ img {
 
 .logo {
   display: block;
-  margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 24px;
   color: #000000;
@@ -131,6 +131,11 @@ img {
   line-height: 1.2;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
 .logo__text {
   color: var(--accent-color);
 }
@@ -140,6 +145,11 @@ img {
   transform: color var(--transition-dur-and-func);
 }
 
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+  }
+}
 .navigation__item {
   position: relative;
   margin-right: 50px;
@@ -186,17 +196,23 @@ img {
   transition: color var(--transition-dur-and-func);
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__list {
+    display: block;
+  }
+}
 .contacts__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
 }
 
 .contacts__link {
   color: var(--mail-color-text);
   font-weight: 500;
-  display: flex;
-  align-items: center;
-  padding-bottom: 32px;
-  padding-top: 32px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
   transition: color var(--transition-dur-and-func);
 }
 .contacts__link:hover, .contacts__link:focus {
@@ -251,6 +267,11 @@ img {
   padding: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu__button-open {
+    display: none;
+  }
+}
 .mobile-menu__button-close {
   position: absolute;
   top: 10px;
@@ -343,6 +364,20 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob/hero/hero@2x.jpg);
   }
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    padding-left: 204px;
+    padding-right: 204px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero/hero.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero/hero@2x.jpg);
+  }
+}
 .hero__title {
   margin-bottom: 30px;
   color: var(--main-color-darck-fon);
@@ -404,6 +439,16 @@ img {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .privileges__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .privileges__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
 .privileges__subtitle {
   line-height: 1.7;
 }
@@ -471,6 +516,23 @@ img {
   margin-bottom: var(--card-set-gap);
 }
 
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
 .team-box__title {
   margin-bottom: 10px;
   color: var(--secondary-color-text);
@@ -526,7 +588,6 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
 }
 
 .clients__icon {
@@ -541,6 +602,21 @@ img {
   flex-basis: calc((100% - 30px) / 2);
 }
 
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item:not(:last-child) {
+    margin-right: var(--card-set-gap);
+  }
+}
 .clients__link {
   display: flex;
   align-items: center;
@@ -751,6 +827,11 @@ img {
   padding: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu__button-open {
+    display: none;
+  }
+}
 .mobile-menu__button-close {
   position: absolute;
   top: 10px;
@@ -862,6 +943,15 @@ img {
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .example-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * var(--card-set-gap));
+    margin-bottom: calc(-1 * var(--card-set-gap));
+    gap: 30px;
+  }
+}
 .portfolio-box {
   position: relative;
 }
@@ -946,8 +1036,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 450px;
-  min-height: 650px;
+  max-width: 480px;
+  min-height: auto;
   padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
