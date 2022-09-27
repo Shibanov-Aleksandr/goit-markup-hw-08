@@ -74,6 +74,7 @@
           </li>
         </ul>
       </div>
+      <!-- ===================MOBILE-MENU=================== -->
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
           <button class="mobile-menu__button-close">
@@ -86,7 +87,9 @@
           </button>
           <ul class="mobile-menu-navigation__list list">
             <li class="mobile-menu-navigation__item">
-              <a class="mobile-menu-navigation__link" href="index.html"
+              <a
+                class="mobile-menu-navigation__link mobile-menu-navigation__link--action"
+                href="index.html"
                 >Студія</a
               >
             </li>
@@ -134,6 +137,7 @@
         </div>
       </div>
     </header>
+    <!-- ===================/MOBILE-MENU=================== -->
     <!--===================/HEADER===================-->
     <!-- ===================MAIN=================== -->
 
@@ -254,7 +258,51 @@
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img src="./images/mob/team/igor.jpg" alt="Ігор" />
+              <picture
+                ><source
+                  srcset="
+                    ./images/desktop/team/igor.jpg    1x,
+                    ./images/desktop/team/igor@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./images/desktop/team/igor-wp.webp    1x,
+                    ./images/desktop/team/igor@2x-wp.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./images/tablet/team/igor.jpg    1x,
+                    ./images/tablet/team/igor@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/tablet/team/igor-wp.webp    1x,
+                    ./images/tablet/team/igor@2x-wp.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/mob/team/igor.jpg    1x,
+                    ./images/mob/team/igor@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:480px)" />
+                <source
+                  srcset="
+                    ./images/mob/team/igor-wp.webp    1x,
+                    ./images/mob/team/igor@2x-wp.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:480px)" />
+                <img src="./images/mob/team/igor.jpg" alt="Ігор"
+              /></picture>
               <div class="team-box">
                 <h3 class="team-box__title">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-box__subtitle">Product Designer</p>
@@ -296,7 +344,51 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/mob/team/olga.jpg" alt="Ольга" />
+              <picture
+                ><source
+                  srcset="
+                    ./images/desktop/team/olga.jpg    1x,
+                    ./images/desktop/team/olga@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./images/desktop/team/olga-wp.webp    1x,
+                    ./images/desktop/team/olga@2x-wp.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./images/tablet/team/olga.jpg    1x,
+                    ./images/tablet/team/olga@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/tablet/team/olga-wp.webp    1x,
+                    ./images/tablet/team/olga@2x-wp.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/mob/team/olga.jpg    1x,
+                    ./images/mob/team/olga@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:480px)" />
+                <source
+                  srcset="
+                    ./images/mob/team/olga-wp.webp    1x,
+                    ./images/mob/team/olga@2x-wp.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:480px)" />
+                <img src="./images/mob/team/olga.jpg" alt="Ольга"
+              /></picture>
               <div class="team-box">
                 <h3 class="team-box__title">Ольга Рєпіна</h3>
                 <p lang="en" class="team-box__subtitle">Frontend Developer</p>
@@ -357,7 +449,51 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/mob/team/mykola.jpg" alt="Микола" />
+              <picture
+                ><source
+                  srcset="
+                    ./images/desktop/team/mykola.jpg    1x,
+                    ./images/desktop/team/mykola@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./images/desktop/team/mykola-wp.webp    1x,
+                    ./images/desktop/team/mykola@2x-wp.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./images/tablet/team/mykola.jpg    1x,
+                    ./images/tablet/team/mykola@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/tablet/team/mykola-wp.webp    1x,
+                    ./images/tablet/team/mykola@2x-wp.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/mob/team/mykola.jpg    1x,
+                    ./images/mob/team/mykola@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:480px)" />
+                <source
+                  srcset="
+                    ./images/mob/team/mykola-wp.webp    1x,
+                    ./images/mob/team/mykola@2x-wp.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:480px)" />
+                <img src="./images/mob/temykola.jpg" alt="Микола"
+              /></picture>
               <div class="team-box">
                 <h3 class="team-box__title">Микола Тарасов</h3>
                 <p lang="en" class="team-box__subtitle">Marketing</p>
@@ -418,7 +554,51 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/mob/team/myhaylo.jpg" alt="Михайло" />
+              <picture
+                ><source
+                  srcset="
+                    ./images/desktop/team/myhaylo.jpg    1x,
+                    ./images/desktop/team/myhaylo@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./images/desktop/team/myhaylo-wp.webp    1x,
+                    ./images/desktop/team/myhaylo@2x-wp.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./images/tablet/team/myhaylo.jpg    1x,
+                    ./images/tablet/team/myhaylo@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/tablet/team/myhaylo-wp.webp    1x,
+                    ./images/tablet/team/myhaylo@2x-wp.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/mob/team/myhaylo.jpg    1x,
+                    ./images/mob/team/myhaylo@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:480px)" />
+                <source
+                  srcset="
+                    ./images/mob/team/myhaylo-wp.webp    1x,
+                    ./images/mob/team/myhaylo@2x-wp.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:480px)" />
+                <img src="./images/mob/team/myhaylo.jpg" alt="Михайло"
+              /></picture>
               <div class="team-box">
                 <h3 class="team-box__title">Михайло Єрмаков</h3>
                 <p lang="en" class="team-box__subtitle">UI Designer</p>
@@ -703,11 +883,12 @@
               <use
                 class="form-window__icon-checked-on"
                 href="./images/sprite/symbol-defs.svg#icon-check"
-              ></use>
-            </svg>
-            Погоджуюся з розсилкою та приймаю &nbsp;
+              ></use></svg
+            ><span class="form-window__icon-text">
+              Погоджуюся з розсилкою та приймаю &nbsp;
 
-            <a class="form-window__link" href="">Умови договору</a></label
+              <a class="form-window__link" href="">Умови договору</a></span
+            ></label
           >
           <button class="form-window__button" type="submit">Відправити</button>
         </form>
