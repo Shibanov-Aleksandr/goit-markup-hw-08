@@ -402,10 +402,10 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    padding-left: 204px;
-    padding-right: 204px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 300px;
+    padding-right: 300px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/bg/hero.jpg);
   }
 }
@@ -633,17 +633,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .clients__item {
-    row-gap: 30px;
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
     flex-basis: calc((100% - 150px) / 6);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .clients__item:not(:last-child) {
-    margin-right: var(--card-set-gap);
+    margin-right: 0;
   }
 }
 .clients__link {
@@ -688,6 +684,17 @@ img {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .box-addres {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .box-addres__link {
   display: block;
   margin-left: auto;
@@ -711,6 +718,14 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .address-webstudio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .address-webstudio__item:not(:last-child) {
   margin-bottom: 8px;
 }
@@ -774,6 +789,12 @@ img {
   width: 100%;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscription {
+    width: 100%;
+    margin-left: auto;
+  }
+}
 .subscription__mail {
   display: block;
   background-color: #2f303a;

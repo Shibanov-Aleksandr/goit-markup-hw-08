@@ -15,14 +15,20 @@
 .address-webstudio {
   display: block;
   margin-bottom: 60px;
-  // display: flex;
-  // flex-direction: column;
+
   width: 100%;
-  // justify-content: center;
-  // align-items: center;
+
   color: var(--main-color-darck-fon);
   font-style: normal;
   text-align: center;
+}
+@media screen and(min-width:1200px) {
+  .address-webstudio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .address-webstudio__item:not(:last-child) {
   margin-bottom: 8px;

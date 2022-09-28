@@ -1,6 +1,11 @@
 .subscription {
   width: 100%;
-  // margin-left: auto;
+}
+@media screen and(min-width:1200px) {
+  .subscription {
+    width: 100%;
+    margin-left: auto;
+  }
 }
 .subscription__mail {
   display: block;
