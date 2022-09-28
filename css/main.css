@@ -708,6 +708,11 @@ img {
     margin-right: 165px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    display: flex;
+  }
+}
 .box-addres__link {
   display: block;
   margin-left: auto;
@@ -804,8 +809,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .subscription {
-    display: flex;
-    width: 100%;
+    display: block;
+    width: 570px;
     margin-left: auto;
   }
 }
@@ -832,10 +837,22 @@ img {
     margin-left: auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .subscription__mail {
+    width: 358px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .footer__title {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    display: flex;
+  }
+}
 .subscription__btn {
   display: flex;
   align-items: center;
