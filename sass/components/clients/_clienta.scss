@@ -3,29 +3,25 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  // gap: 30px;
+  gap: 30px;
 }
-.clients__icon {
-  fill: rgba(175, 177, 184, 1);
-  transition: fill var(--transition-dur-and-func);
-  .clients__link:hover &,
-  .clients__link:focus & {
-    fill: rgba(33, 150, 243, 1);
-  }
-}
+
 .clients__item {
   flex-basis: calc((100% - 30px) / 2);
 }
+
 @media screen and (min-width: 768px) {
   .clients__item {
-    flex-basis: calc((100% - 60px) / 3);
+    row-gap: 30px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .clients__item {
     flex-basis: calc((100% - 150px) / 6);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .clients__item:not(:last-child) {
     margin-right: var(--card-set-gap);
@@ -44,5 +40,13 @@
   &:focus {
     border: 1px solid #2196f3;
     border-radius: 4px;
+  }
+}
+.clients__icon {
+  fill: rgba(175, 177, 184, 1);
+  transition: fill var(--transition-dur-and-func);
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: rgba(33, 150, 243, 1);
   }
 }

@@ -11,15 +11,21 @@
   margin-bottom: var(--card-set-gap);
   // }
 }
+// @media screen and (min-width: 768px) {
+//   .team-wrapper {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// }
 @media screen and (min-width: 768px) {
   .team-list {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 768px) {
   .team__item {
     display: flex;
-    flex-direction: column;
     flex-basis: calc((100% - 30px) / 2);
   }
 }

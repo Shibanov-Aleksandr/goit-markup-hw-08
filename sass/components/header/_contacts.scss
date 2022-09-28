@@ -8,29 +8,45 @@
     display: block;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    display: flex;
+  }
+}
 
-.contacts__item:not(:last-child) {
-  margin-bottom: 10px;
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .contacts__link {
   color: var(--mail-color-text);
   font-weight: 500;
   // display: flex;
-  // align-items: center;
-  // padding-bottom: 32px;
-  // padding-top: 32px;
+
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
-
   letter-spacing: 0.02em;
-
   color: #757575;
   transition: color var(--transition-dur-and-func);
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    display: flex;
+    align-items: center;
+    padding-bottom: 32px;
+    padding-top: 32px;
   }
 }
 
