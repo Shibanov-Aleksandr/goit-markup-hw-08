@@ -368,6 +368,17 @@ img {
   color: var(--accent-color);
 }
 
+.hero__title {
+  margin-bottom: 30px;
+  color: var(--main-color-darck-fon);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  align-items: center;
+  text-transform: uppercase;
+}
+
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
@@ -380,6 +391,7 @@ img {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob/hero/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   text-align: center;
 }
 
@@ -415,17 +427,6 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/bg/hero@2x.jpg);
   }
 }
-.hero__title {
-  margin-bottom: 30px;
-  color: var(--main-color-darck-fon);
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
-  letter-spacing: 0.06em;
-  align-items: center;
-  text-transform: uppercase;
-}
-
 .hero__button {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -550,19 +551,26 @@ img {
   background-color: var(--main-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: var(--card-set-gap);
+}
+
+.team__list {
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
-  .team-list {
+  .team__list {
     display: flex;
     flex-wrap: wrap;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    row-gap: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .team__item {
     display: flex;
-    flex-basis: calc((100% - 30px) / 2);
+    flex-direction: column;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -685,15 +693,19 @@ img {
   align-items: center;
 }
 
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .box-addres {
     margin-right: 165px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-wrapper {
-    display: flex;
-    flex-direction: row;
   }
 }
 .box-addres__link {
@@ -792,6 +804,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .subscription {
+    display: flex;
     width: 100%;
     margin-left: auto;
   }
@@ -812,6 +825,13 @@ img {
   line-height: 1.25;
 }
 
+@media screen and (min-width: 768px) {
+  .subscription__mail {
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .footer__title {
   text-align: center;
 }
