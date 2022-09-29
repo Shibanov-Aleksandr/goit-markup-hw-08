@@ -3,9 +3,7 @@
 }
 @media screen and(min-width:1200px) {
   .subscription {
-    display: block;
-    width: 570px;
-    margin-left: auto;
+    display: inline-flex;
   }
 }
 .subscription__mail {
@@ -32,6 +30,7 @@
 }
 @media screen and (min-width: 1200px) {
   .subscription__mail {
+    display: inline-flex;
     width: 358px;
     margin-right: 0;
     margin-left: 0;
