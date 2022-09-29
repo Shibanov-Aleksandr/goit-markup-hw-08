@@ -8,6 +8,13 @@
   align-items: center;
   text-transform: uppercase;
 }
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;

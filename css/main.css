@@ -59,6 +59,12 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .section.we-do {
   padding-top: 0;
 }
@@ -238,6 +244,8 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts__link {
     display: flex;
+    font-size: 14px;
+    line-height: 1.33;
     align-items: center;
     padding-bottom: 32px;
     padding-top: 32px;
@@ -379,6 +387,12 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
@@ -679,6 +693,11 @@ img {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .box-addres {
+    margin-right: 165px;
+  }
+}
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -715,18 +734,8 @@ img {
     align-items: baseline;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .box-addres {
-    margin-right: 165px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-box {
-    display: flex;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .subscription-wrappep {
     display: flex;
   }
 }
@@ -744,6 +753,12 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .box-addres__link {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .address-webstudio {
   display: block;
   margin-bottom: 60px;
@@ -759,6 +774,13 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-webstudio__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 .address-webstudio__item:not(:last-child) {
@@ -835,7 +857,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .subscription {
-    display: inline-flex;
+    margin-left: auto;
+    width: auto;
   }
 }
 .subscription__mail {
@@ -909,6 +932,18 @@ img {
   background-image: url(../images/svg/icon-send.svg);
 }
 
+@media screen and (min_width: 1200px) {
+  .subscription__btn {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription-wrappep {
+    display: flex;
+    gap: 12px;
+  }
+}
 .mobile-menu {
   position: fixed;
   top: 0;

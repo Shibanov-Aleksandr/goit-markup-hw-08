@@ -3,7 +3,8 @@
 }
 @media screen and(min-width:1200px) {
   .subscription {
-    display: inline-flex;
+    margin-left: auto;
+    width: auto;
   }
 }
 .subscription__mail {
@@ -80,5 +81,17 @@
     margin-left: 10px;
 
     background-image: url(../images/svg/icon-send.svg);
+  }
+}
+@media screen and (min_width: 1200px) {
+  .subscription__btn {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription-wrappep {
+    display: flex;
+    gap: 12px;
   }
 }
