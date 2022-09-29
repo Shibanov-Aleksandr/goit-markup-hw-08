@@ -4,11 +4,13 @@
     closeMenuBtn: document.querySelector("[data-menu-close]"),
     menu: document.querySelector("[data-menu]"),
   };
+  bodyNoScroll = document.querySelector("[data-no-scroll]");
 
   refs.openMenuBtn.addEventListener("click", toggleModal);
   refs.closeMenuBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
     refs.menu.classList.toggle("is-open");
+    refs.bodyNoScroll.classList.toggle("no-scroll");
   }
 })();
