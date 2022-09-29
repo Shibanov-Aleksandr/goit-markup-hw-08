@@ -1220,6 +1220,16 @@ img {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 .modal__btn {
   position: absolute;
   display: flex;
