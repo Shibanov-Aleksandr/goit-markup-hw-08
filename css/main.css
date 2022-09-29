@@ -369,6 +369,7 @@ img {
 
 .mobile-menu-social__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-right: 20px;
   font-weight: 500;
@@ -1051,6 +1052,7 @@ img {
 
 .mobile-menu-social__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-right: 20px;
   font-weight: 500;
@@ -1077,14 +1079,18 @@ img {
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   margin-bottom: 40px;
   gap: 15px 8px;
 }
 
+@media screen and (max-width: 767px) {
+  .filter-list {
+    justify-content: flex-start;
+  }
+}
 @media screen and (min-width: 768px) {
   > .filter-list {
-    justify-content: center;
     margin-bottom: 30px;
   }
 }
