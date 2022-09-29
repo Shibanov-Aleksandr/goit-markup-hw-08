@@ -2,14 +2,16 @@
   display: none;
   transform: color var(--transition-dur-and-func);
 }
+
 @media screen and (min-width: 768px) {
   .navigation__list {
     display: flex;
   }
 }
+
 .navigation__item {
-  // position: relative;
   margin-right: 50px;
+
   &:last-child {
     margin-right: 0px;
   }
@@ -25,11 +27,13 @@
   line-height: 1.15;
   letter-spacing: 0.02em;
   transition: color var(--transition-dur-and-func);
+
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
 }
+
 @media screen and (min-width: 768) {
   .navigation__link {
     position: relative;
@@ -38,6 +42,7 @@
 
 .navigation__link--active {
   color: var(--accent-color);
+
   &::after {
     color: var(--accent-color);
     position: absolute;
@@ -49,6 +54,7 @@
     border-radius: 2px;
     background-color: var(--accent-color-bg);
   }
+
   ::after & {
     opacity: 0;
   }

@@ -2,6 +2,7 @@
   width: 100%;
   margin-bottom: 60px;
 }
+
 @media screen and (min-width: 1200px) {
   .footer-social {
     margin-left: 70px;
@@ -11,6 +12,7 @@
     align-items: flex-start;
   }
 }
+
 .footer__title {
   text-align: center;
   margin-bottom: 20px;
@@ -20,11 +22,13 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .footer-social__list {
   display: flex;
   justify-content: center;
   column-gap: 10px;
 }
+
 .footer-social__link {
   display: flex;
   align-items: center;
@@ -39,6 +43,7 @@
     background-color: #2196f3;
   }
 }
+
 .footer-social__icon {
   fill: rgba(255, 255, 255, 1);
 }

@@ -28,19 +28,19 @@
 .contacts__link {
   color: var(--mail-color-text);
   font-weight: 500;
-  // display: flex;
-
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
   transition: color var(--transition-dur-and-func);
+
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .contacts__link {
     display: flex;

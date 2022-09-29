@@ -4,7 +4,6 @@
   margin-right: auto;
   gap: 9px;
   margin-bottom: 20px;
-
   color: var(--main-color-darck-fon);
   font-family: var(--secondary-font-family);
   font-weight: 700;
@@ -12,6 +11,7 @@
   line-height: 1.2;
   text-align: center;
 }
+
 @media screen and (min-width: 1200px) {
   .box-addres__link {
     margin-left: 0;
@@ -21,13 +21,12 @@
 
 .address-webstudio {
   display: block;
-
   width: 100%;
-
   color: var(--main-color-darck-fon);
   font-style: normal;
   text-align: center;
 }
+
 @media screen and(min-width:1200px) {
   .address-webstudio {
     display: flex;
@@ -36,6 +35,7 @@
     align-items: center;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .address-webstudio__list {
     display: flex;
@@ -44,9 +44,11 @@
     margin-right: auto;
   }
 }
+
 .address-webstudio__item:not(:last-child) {
   margin-bottom: 8px;
 }
+
 .address-webstudio__link {
   font-size: 14px;
   line-height: 1.71;
@@ -57,6 +59,7 @@
     color: var(--accent-color);
   }
 }
+
 .address-webstudio__link-contacts {
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transition-dur-and-func);

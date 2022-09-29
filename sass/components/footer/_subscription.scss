@@ -1,12 +1,14 @@
 .subscription {
   width: 100%;
 }
+
 @media screen and(min-width:1200px) {
   .subscription {
     margin-left: auto;
     width: auto;
   }
 }
+
 .subscription__mail {
   display: block;
   background-color: #2f303a;
@@ -22,6 +24,7 @@
   font-size: 16px;
   line-height: 1.25;
 }
+
 @media screen and (min-width: 768px) {
   .subscription__mail {
     width: 450px;
@@ -29,6 +32,7 @@
     margin-left: auto;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .subscription__mail {
     display: inline-flex;
@@ -37,16 +41,20 @@
     margin-left: 0;
   }
 }
+
 @media screen and (min-width: 1200px) {
 }
+
 .footer__title {
   text-align: center;
 }
+
 @media screen and (min-width: 1200px) {
   .footer__title {
     display: flex;
   }
 }
+
 .subscription__btn {
   display: flex;
   align-items: center;
@@ -57,8 +65,6 @@
   margin-right: auto;
   background-color: var(--accent-color-bg);
   color: var(--main-color-darck-fon);
-  // align-items: center;
-  // justify-content: center;
   letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 16px;
@@ -69,26 +75,29 @@
   transition: background-color var(--transition-dur-and-func),
     box-shadow var(--transition-dur-and-func),
     border-radius var(--transition-dur-and-func);
+
   &:hover,
   &:focus {
     background-color: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15) 4px;
   }
+
   &::after {
     content: "";
     width: 24px;
     height: 24px;
     margin-left: 10px;
-
     background-image: url(../images/svg/icon-send.svg);
   }
 }
+
 @media screen and (min_width: 1200px) {
   .subscription__btn {
     margin-left: 0;
     margin-bottom: 0;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .subscription-wrappep {
     display: flex;

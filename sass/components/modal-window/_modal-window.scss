@@ -12,7 +12,6 @@
 
 .modal {
   position: absolute;
-  // top: 50%;desktop
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -24,16 +23,19 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
   }
 }
+
 .modal__btn {
   position: absolute;
   display: flex;
@@ -48,6 +50,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+
 .modal__icon:hover {
   fill: #188ce8;
 }

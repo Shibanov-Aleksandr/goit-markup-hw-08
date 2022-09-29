@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .form-window__title {
   margin-bottom: 12px;
   font-weight: 700;
@@ -11,9 +12,11 @@
   letter-spacing: 0.03em;
   color: var(--secondary-color-text);
 }
+
 .form-window__label {
   margin-bottom: 10px;
 }
+
 .form-window__subtitle {
   display: block;
   margin-bottom: 4px;
@@ -21,10 +24,12 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
+
 .form-window__wrapper {
   position: relative;
   display: block;
 }
+
 .form-window__input {
   padding-left: 42px;
   width: 100%;
@@ -58,10 +63,12 @@
   border-radius: 4px;
   resize: none;
   transition: border-color var(--transition-dur-and-func);
+
   &:focus {
     outline: none;
     border-color: var(--accent-color);
   }
+
   &::placeholder {
     font-size: 12px;
     line-height: 1.16px;
@@ -73,12 +80,14 @@
 .form-window__label-coment {
   margin-bottom: 25px;
 }
+
 .form-window__lable-checkbox {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
+
 .form-window__icon-checked {
   margin-right: 8px;
   width: 16px;
@@ -87,6 +96,7 @@
   border-radius: 2px;
   flex-shrink: 0;
 }
+
 .form-window__icon-checked-on {
   display: none;
   .form-window__input-checkbox:focus + & {
@@ -104,6 +114,7 @@
   position: absolute;
   appearance: none;
 }
+
 .form-window__link {
   text-decoration: revert;
   font-size: 12px;
@@ -111,12 +122,14 @@
   letter-spacing: 0.03em;
   color: var(--accent-color);
   transition: text-decoration var(--transition-dur-and-func);
+
   &:hover,
   &:focus {
     outline: none;
     text-decoration: none;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .form-window__link {
     font-size: 14px;
@@ -124,6 +137,7 @@
     letter-spacing: 0.03em;
   }
 }
+
 .form-window__icon-text {
   display: inline-block;
   font-size: 12px;
@@ -131,6 +145,7 @@
   letter-spacing: 0.03em;
   color: #757575;
 }
+
 @media screen and (min-width: 1200px) {
   .form-window__icon-text {
     font-size: 14px;
@@ -138,6 +153,7 @@
     letter-spacing: 0.03em;
   }
 }
+
 .form-window__button {
   display: flex;
   padding-top: 10px;
@@ -162,6 +178,7 @@
   transition: background-color var(--transition-dur-and-func),
     box-shadow var(--transition-dur-and-func),
     border-radius var(--transition-dur-and-func);
+    
   &:hover,
   &:focus {
     outline: none;

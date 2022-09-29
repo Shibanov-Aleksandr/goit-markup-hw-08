@@ -3,7 +3,6 @@
   padding-bottom: 10px;
   padding-left: 32px;
   padding-right: 32px;
-
   color: var(--main-color-darck-fon);
   background-color: var(--accent-color-bg);
   min-width: 200px;
@@ -20,6 +19,7 @@
   transition: background-color var(--transition-dur-and-func),
     box-shadow var(--transition-dur-and-func),
     border-radius var(--transition-dur-and-func);
+
   &:hover,
   &:focus {
     background-color: #188ce8;

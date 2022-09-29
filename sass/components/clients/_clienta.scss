@@ -15,6 +15,7 @@
     flex-basis: calc((100% - 60px) / 3);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .clients__item {
     flex-basis: calc((100% - 150px) / 6);
@@ -37,6 +38,7 @@
     border-radius: 4px;
   }
 }
+
 .clients__icon {
   fill: rgba(175, 177, 184, 1);
   transition: fill var(--transition-dur-and-func);
