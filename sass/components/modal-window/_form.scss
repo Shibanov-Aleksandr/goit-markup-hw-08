@@ -98,6 +98,7 @@
   + .form-window__icon-checked
   .form-window__icon-checked-on {
   display: block;
+  background-origin: padding-box;
 }
 
 .form-window__input-checkbox {
@@ -108,11 +109,7 @@
   text-decoration: revert;
   font-size: 12px;
   line-height: 1.16;
-
   letter-spacing: 0.03em;
-  // font-size: 14px;
-  // line-height: 1.71;
-  // letter-spacing: 0.03em;
   color: var(--accent-color);
   transition: text-decoration var(--transition-dur-and-func);
   &:hover,
@@ -121,15 +118,26 @@
     text-decoration: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .form-window__link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
 .form-window__icon-text {
   display: inline-block;
   font-size: 12px;
   line-height: 1.16;
-  /* identical to box height */
-
   letter-spacing: 0.03em;
-
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .form-window__icon-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 .form-window__button {
   display: flex;
