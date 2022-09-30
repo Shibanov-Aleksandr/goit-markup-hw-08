@@ -1,9 +1,7 @@
 .subscription {
   width: 100%;
-}
 
-@media screen and(min-width:1200px) {
-  .subscription {
+  @media screen and(min-width:1200px) {
     margin-left: auto;
     width: auto;
   }
@@ -23,26 +21,19 @@
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
-}
 
-@media screen and (min-width: 768px) {
-  .subscription__mail {
+  @media screen and (min-width: 768px) {
     width: 450px;
     margin-right: auto;
     margin-left: auto;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .subscription__mail {
+  @media screen and (min-width: 1200px) {
     display: inline-flex;
     width: 358px;
     margin-right: 0;
     margin-left: 0;
   }
-}
-
-@media screen and (min-width: 1200px) {
 }
 
 .footer__title {
@@ -89,10 +80,8 @@
     margin-left: 10px;
     background-image: url(../images/svg/icon-send.svg);
   }
-}
 
-@media screen and (min_width: 1200px) {
-  .subscription__btn {
+  @media screen and (min_width: 1200px) {
     margin-left: 0;
     margin-bottom: 0;
   }

@@ -128,10 +128,8 @@
     outline: none;
     text-decoration: none;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .form-window__link {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -144,10 +142,8 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
-}
 
-@media screen and (min-width: 1200px) {
-  .form-window__icon-text {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -178,7 +174,7 @@
   transition: background-color var(--transition-dur-and-func),
     box-shadow var(--transition-dur-and-func),
     border-radius var(--transition-dur-and-func);
-    
+
   &:hover,
   &:focus {
     outline: none;

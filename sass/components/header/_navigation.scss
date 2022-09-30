@@ -1,13 +1,13 @@
 .navigation__list {
   display: none;
   transform: color var(--transition-dur-and-func);
-}
 
-@media screen and (min-width: 768px) {
-  .navigation__list {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 }
+
+
 
 .navigation__item {
   margin-right: 50px;
@@ -32,11 +32,9 @@
   &:focus {
     color: var(--accent-color);
   }
-}
 
-@media screen and (min-width: 768) {
-  .navigation__link {
-    position: relative;
+  @media screen and (min-width: 768) {
+      position: relative;
   }
 }
 
