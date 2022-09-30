@@ -67,7 +67,9 @@
   letter-spacing: 0.02em;
   color: var(--secondary-color-text);
 }
-
+.mobile-menu-contact__item {
+  margin-bottom: 32px;
+}
 .mobile-menu-navigation__item:not(:last-child) {
   margin-bottom: 32px;
 }

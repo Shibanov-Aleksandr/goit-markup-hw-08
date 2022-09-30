@@ -9,6 +9,12 @@
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .privileges__title {
+    justify-content: flex-start;
+  }
+}
+
 .privileges__list {
   display: flex;
   flex-wrap: wrap;
